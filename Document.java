@@ -10,8 +10,8 @@ public class Document {
     }
 
     public String fix(String string){
-        string.trim();
-        string = string.replace("( )+", " ");
+        string = string.trim();
+        string = string.replaceAll("( )+", " ");
         return string;
     }
 }
