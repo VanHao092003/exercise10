@@ -11,6 +11,7 @@ public class Document {
 
     public String fix(String string){
         string.trim();
-        return " ";
+        string = string.replace("( )+", " ");
+        return string;
     }
 }
